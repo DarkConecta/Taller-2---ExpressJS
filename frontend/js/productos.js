@@ -19,7 +19,7 @@ async function loadData() {
 
 function populateTable(products, categories, providers) {
     const container = document.querySelector("tbody");
-    container.innerHTML = ''; // Limpiar la tabla antes de agregar nuevos datos
+    container.innerHTML = ''; 
 
     const categoryMap = new Map(categories.map(category => [category.CategoriaID, category.CategoriaNombre]));
     const providerMap = new Map(providers.map(provider => [provider.ProveedorID, provider.Compania]));
